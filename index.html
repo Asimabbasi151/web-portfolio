@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Asim Abbasi — WordPress Developer</title>
+<meta name="description" content="Custom, responsive, high-performance WordPress websites by Asim Abbasi."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0e0e0c;--fg:#ede9df;--mut:#8d8a80;--acc:#c6ff3d;--line:#2a2a26;--s:#171715;--pad:clamp(20px,5vw,80px)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:auto}body{background:var(--bg);color:var(--fg);font-family:Archivo,system-ui,sans-serif;overflow-x:hidden;line-height:1.5}
+a{color:inherit;text-decoration:none}ul{list-style:none;padding:0}h1,h2,h3{font-weight:900;line-height:.95;letter-spacing:-.03em;text-transform:uppercase}
+h2{font-size:clamp(2.2rem,6.5vw,6rem);max-width:16ch}.meta,.tag{font-family:'JetBrains Mono',monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mut)}
+.sec{padding:clamp(80px,14vw,180px) var(--pad);border-top:1px solid var(--line)}.sec .meta{margin-bottom:2rem}
+.btn{display:inline-flex;align-items:center;height:52px;padding:0 28px;background:var(--acc);color:#0e0e0c;font-weight:600;border:1px solid var(--acc);border-radius:999px;transition:background .3s,color .3s}.btn.ghost{background:none;color:var(--fg);border-color:var(--line)}.btn:hover{background:var(--fg);color:#0e0e0c;border-color:var(--fg)}.btn.sm{height:40px;padding:0 20px;font-size:.9rem}
+.nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px var(--pad);mix-blend-mode:normal;backdrop-filter:blur(8px);background:rgba(14,14,12,.6);border-bottom:1px solid var(--line)}.logo{font-weight:900;font-size:1.4rem}.logo span{color:var(--acc)}.nav ul{display:flex;gap:2rem}.nav li a:hover{color:var(--acc)}
+.hero{position:relative;min-height:100svh;padding:120px var(--pad) 60px;display:flex;flex-direction:column;justify-content:flex-end;gap:2rem;overflow:hidden}
+.curtain{position:fixed;inset:0;background:var(--acc);z-index:100;pointer-events:none}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--acc);margin-right:10px}
+.hero h1{font-size:clamp(2.6rem,10.5vw,10.5rem);max-width:14ch}.w{display:inline-block;overflow:hidden;vertical-align:top}.w>span{display:inline-block}
+.hero-b{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}.lead{max-width:44ch;color:var(--mut);font-size:1.1rem}.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.orb{position:absolute;right:-8vw;top:14%;width:34vw;height:34vw;border:1px solid var(--acc);border-radius:50%;opacity:.35;z-index:-1}.scroll{position:absolute;right:var(--pad);top:96px;font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--mut)}
+.ab{display:grid;grid-template-columns:1.4fr 1fr;gap:4rem;align-items:end}.ab p{color:var(--mut);font-size:1.15rem}.hl{margin-top:2rem}.hl li{padding:14px 0;border-top:1px solid var(--line);font-family:'JetBrains Mono',monospace;font-size:.85rem}
+.work{position:relative;height:100svh;overflow:hidden;border-top:1px solid var(--line)}.big{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-size:clamp(5rem,26vw,28rem);line-height:.82;color:var(--fg)}
+.stack{position:absolute;left:50%;bottom:6vh;width:min(560px,86vw);height:min(420px,52vh);transform:translateX(-50%)}
+.card{position:absolute;inset:0;background:var(--s);border:1px solid var(--line);display:flex;flex-direction:column;will-change:transform}.shot{flex:1;min-height:0;display:grid;place-items:center;background:repeating-linear-gradient(135deg,#1c1c19 0 14px,#222220 14px 28px);overflow:hidden}.shot span{font-weight:900;font-size:2.4rem;text-transform:uppercase;color:#3a3a35}.shot img{width:100%;height:100%;object-fit:cover}
+.info{display:flex;justify-content:space-between;align-items:flex-end;padding:16px 20px;gap:1rem}.info h3{font-size:1.6rem}.info p{color:var(--mut);font-size:.9rem}.info a{color:var(--acc);font-weight:600;white-space:nowrap}
+.svcs{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:4rem}.svc{position:relative;grid-column:span 6;padding:32px;border:1px solid var(--line);min-height:280px;display:flex;flex-direction:column;gap:1rem;overflow:hidden;transition:background .4s,color .4s}.svc:nth-child(1){grid-column:span 7}.svc:nth-child(2){grid-column:span 5;margin-top:48px}.svc:nth-child(3){grid-column:span 5}.svc:nth-child(4){grid-column:span 7;margin-top:48px}
+.num{font-family:'JetBrains Mono',monospace;color:var(--acc);font-size:.85rem}.svc h3{font-size:clamp(1.5rem,2.6vw,2.4rem);max-width:14ch}.svc p{color:var(--mut);max-width:42ch;margin-top:auto}.arr{position:absolute;right:28px;top:24px;font-size:2rem;transition:transform .4s}
+.svc:hover{background:var(--acc);color:#0e0e0c}.svc:hover p,.svc:hover .num{color:#0e0e0c}.svc:hover .arr{transform:translate(8px,-8px) rotate(-45deg)}
+.skills{overflow:hidden;border-block:1px solid var(--line);padding:2rem 0}.track{display:flex;width:max-content;animation:m 40s linear infinite}.track span{font-size:clamp(2rem,5vw,4.5rem);font-weight:900;text-transform:uppercase;white-space:nowrap;padding-right:2rem}.track b{color:var(--acc);margin-left:2rem;font-size:.6em}@keyframes m{to{transform:translateX(-50%)}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.ct h2{max-width:14ch;font-size:clamp(2.6rem,8vw,8rem)}.mail{display:inline-block;margin:2.5rem 0;font-size:clamp(1.2rem,3.4vw,3rem);font-weight:800;border-bottom:2px solid var(--acc)}.mail:hover{color:var(--acc)}
+.foot{display:flex;justify-content:space-between;padding:24px var(--pad);border-top:1px solid var(--line);color:var(--mut);font-size:.85rem}
+.c-dot,.c-out{display:none}.has-cursor,.has-cursor *{cursor:none!important}.has-cursor .c-dot,.has-cursor .c-out{display:block;position:fixed;left:0;top:0;pointer-events:none;z-index:200}
+.c-dot{width:8px;height:8px;margin:-4px 0 0 -4px;background:var(--acc);border-radius:50%}.c-out{width:36px;height:36px;margin:-18px 0 0 -18px;border:1px solid var(--acc);border-radius:50%;display:grid;place-items:center}.c-out span{font:.38rem 'JetBrains Mono',monospace;color:#0e0e0c;white-space:nowrap}.c-out.lbl{background:var(--acc)}
+@media(max-width:820px){.nav ul{display:none}.ab,.svcs{grid-template-columns:1fr}.svc,.svc:nth-child(n){grid-column:auto;margin-top:0}.orb{display:none}
+.work{height:auto;padding:80px var(--pad)}.big{position:static;font-size:22vw;display:block;text-align:left;margin-bottom:2rem}.stack{position:static;transform:none;width:auto;height:auto;display:grid;gap:16px}.card{position:static;min-height:320px}}
+@media(prefers-reduced-motion:reduce){.track{animation:none}}
+
+</style></head><body>
+<div class="c-out" aria-hidden="true"><span></span></div><div class="c-dot" aria-hidden="true"></div>
+<header class="nav"><a href="#top" class="logo">AA<span>.</span></a>
+<nav aria-label="Primary"><ul><li><a href="#about">About</a></li><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<a href="#contact" class="btn sm magnetic">Hire me</a></header>
+<main>
+<section id="top" class="hero"><div class="curtain" aria-hidden="true"></div>
+<p class="tag fade"><i class="dot"></i>Available for new projects · Karachi, PK</p>
+<h1 id="h1" aria-label="I build WordPress experiences that stand out.">I BUILD WORDPRESS EXPERIENCES THAT STAND OUT.</h1>
+<div class="hero-b"><p class="fade lead">Asim Abbasi — I build custom, responsive, high-performance WordPress websites with ~2 years of hands-on experience.</p>
+<div class="fade ctas"><a class="btn magnetic" href="#work">Explore My Work</a><a class="btn ghost magnetic" href="#contact">Let's Talk</a></div></div>
+<div class="orb" aria-hidden="true"></div><a class="scroll fade" href="#about">Scroll ↓</a></section>
+
+<section id="about" class="sec"><p class="meta">/ 01 — About</p><div class="ab"><h2>NOT JUST WEBSITES. DIGITAL EXPERIENCES BUILT WITH PURPOSE.</h2>
+<div><p>I'm a WordPress developer who builds custom websites instead of just installing themes. I care about pixel-accurate layouts, responsive behavior, performance and solving practical problems for the businesses I work with.</p>
+<ul class="hl"><li>~2 yrs professional WordPress development</li><li>Figma-to-WordPress with attention to detail</li><li>Custom CSS, JavaScript &amp; PHP</li></ul></div></div></section>
+
+<section id="work" class="work"><h2 class="big" aria-label="My work">MY<br/>WORK</h2><div class="stack" id="stack"></div></section>
+
+<section id="services" class="sec"><p class="meta">/ 02 — Services</p><h2>WHAT I BRING TO THE TABLE.</h2><div class="svcs" id="svcs"></div></section>
+
+<section class="skills" aria-label="Skills and tools"><div class="track" id="track"></div></section>
+
+<section id="contact" class="sec ct-s"><p class="meta">/ 03 — Contact</p><div class="ct"><h2>HAVE A PROJECT IN MIND? LET'S BUILD SOMETHING GREAT.</h2>
+<a class="mail" id="mail"></a>
+<div class="ctas"><a class="btn magnetic" id="mail2">Discuss a project</a><a class="btn ghost magnetic" id="li" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="btn ghost magnetic" id="gh" target="_blank" rel="noopener noreferrer">GitHub</a></div></div></section>
+</main>
+<footer class="foot"><span>© <span id="yr"></span> Asim Abbasi</span><span>WordPress Developer</span></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+/* ===== EDIT ME: all content lives here ===== */
+const PROFILE={email:'healthblog546@gmail.com',linkedin:'https://www.linkedin.com/in/YOUR-HANDLE',github:'https://github.com/YOUR-HANDLE'}; // TODO: replace social placeholders
+// img: put screenshots in an /images folder and set e.g. 'images/techeverse.jpg'
+const PROJECTS=[
+ {name:'Techeverse',cat:'Software & AI Agency Site',tech:['WordPress','Elementor'],url:'https://techeverse.com/',img:''},
+ {name:'ABPro',cat:'Business Website',tech:['WordPress','Custom CSS'],url:'https://abpro.wsihublab.com/',img:''},
+ {name:'KUR Clinic',cat:'Clinic Website',tech:['WordPress','Elementor'],url:'https://kurclinic.com/',img:''},
+ {name:'Accountax Global',cat:'Accounting Firm Site',tech:['WordPress','Responsive UI'],url:'https://accountaxglobal.com/',img:''},
+ {name:'Nastech FZC',cat:'Corporate Website',tech:['WordPress','JavaScript'],url:'https://nastechfzc.com/',img:''}];
+const SERVICES=[
+ ['01','Custom WordPress Development','Custom-built WordPress websites tailored to business needs, with flexible layouts and clean implementation.'],
+ ['02','Elementor & Bricks Development','Responsive page building and custom layouts using Elementor and Bricks, with attention to design accuracy and maintainability.'],
+ ['03','WooCommerce Development','Online stores with thoughtful product layouts, responsive shopping experiences, and practical customization.'],
+ ['04','Website Redesign & Optimization','Modernizing existing websites, improving responsiveness, refining layouts, and addressing front-end performance issues.']];
+const SKILLS=['WordPress','Elementor','Bricks Builder','Divi','WooCommerce','HTML','CSS','JavaScript','jQuery','PHP','ACF','Figma-to-WordPress'];
+/* ===== Render ===== */
+const $=s=>document.querySelector(s);
+$('#stack').innerHTML=PROJECTS.map(p=>`<article class="card" data-cursor="VIEW PROJECT"><div class="shot">${p.img?`<img src="${p.img}" alt="${p.name} website preview" loading="lazy" width="800" height="500">`:`<span aria-hidden="true">${p.name}</span>`}</div><div class="info"><div><h3>${p.name}</h3><p>${p.cat}</p><p class="meta">${p.tech.join(' / ')}</p></div><a href="${p.url}" target="_blank" rel="noopener noreferrer" aria-label="View ${p.name}">View Project ↗</a></div></article>`).join('');
+$('#svcs').innerHTML=SERVICES.map(([n,t,d])=>`<div class="svc" data-cursor="•"><span class="num">${n}</span><h3>${t}</h3><p>${d}</p><span class="arr" aria-hidden="true">→</span></div>`).join('');
+$('#track').innerHTML=[...SKILLS,...SKILLS].map((s,i)=>`<span ${i>=SKILLS.length?'aria-hidden="true"':''}>${s}<b>✦</b></span>`).join('');
+const mt='mailto:'+PROFILE.email+'?subject=Project%20inquiry';
+$('#mail').href=mt;$('#mail').textContent=PROFILE.email;$('#mail2').href=mt;$('#li').href=PROFILE.linkedin;$('#gh').href=PROFILE.github;$('#yr').textContent=new Date().getFullYear();
+const h1=$('#h1');h1.innerHTML=h1.textContent.split(' ').map(w=>`<span class="w" aria-hidden="true"><span>${w}</span></span> `).join('');
+/* ===== Animation ===== */
+gsap.registerPlugin(ScrollTrigger);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduce){
+ const lenis=new Lenis({lerp:.1});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);
+ document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(a){e.preventDefault();lenis.scrollTo(a.getAttribute('href'))}});
+ gsap.timeline({defaults:{ease:'power4.out'}}).to('.curtain',{yPercent:-100,duration:.7,ease:'power3.inOut',delay:.2})
+  .from('.w>span',{yPercent:110,duration:.9,stagger:.05},'-=.2').from('.fade',{y:24,opacity:0,stagger:.1,duration:.7},'-=.5');
+ gsap.to('.orb',{yPercent:-30,scrollTrigger:{trigger:'.hero',scrub:true,start:'top top',end:'bottom top'}});
+ [['.ab > *','#about'],['.svc','.svcs'],['.ct > *','#contact']].forEach(([t,tr])=>gsap.from(t,{y:50,opacity:0,stagger:.12,duration:.9,ease:'power3.out',scrollTrigger:{trigger:tr,start:'top 75%'}}));
+}else{$('.curtain').remove()}
+const mm=gsap.matchMedia();
+mm.add('(min-width:821px) and (prefers-reduced-motion: no-preference)',()=>{
+ const cards=gsap.utils.toArray('.card'),n=cards.length;
+ cards.forEach((c,i)=>gsap.set(c,{y:i*22,scale:1-i*.05,rotation:i?(i%2?1.5:-1.5):0,zIndex:n-i}));
+ const tl=gsap.timeline({scrollTrigger:{trigger:'#work',start:'top top',end:()=>'+='+innerHeight*(n+1),pin:true,scrub:.6,invalidateOnRefresh:true}});
+ tl.to('.big',{yPercent:60,opacity:.15,duration:1.2,ease:'none'},0);
+ cards.forEach((c,i)=>{const d=i%2?1:-1,t=.6+i;
+  tl.to(c,{x:()=>d*innerWidth*.75,rotation:d*14,y:-40,duration:1,ease:'power2.in'},t);
+  if(cards[i+1])tl.to(cards.slice(i+1),{y:j=>j*22,scale:j=>1-j*.05,rotation:0,duration:1,ease:'power2.out'},t)});
+ tl.to({},{duration:.4});
+});
+mm.add('(max-width:820px), (prefers-reduced-motion: reduce)',()=>{gsap.from('.card',{y:40,opacity:0,stagger:.1,scrollTrigger:{trigger:'#work',start:'top 75%'}})});
+/* ===== Custom cursor + magnetic buttons (desktop only) ===== */
+if(matchMedia('(hover:hover) and (pointer:fine)').matches&&!reduce){
+ document.documentElement.classList.add('has-cursor');
+ const d=$('.c-dot'),o=$('.c-out'),l=$('.c-out span');
+ const dx=gsap.quickTo(d,'x',{duration:.1}),dy=gsap.quickTo(d,'y',{duration:.1}),ox=gsap.quickTo(o,'x',{duration:.4}),oy=gsap.quickTo(o,'y',{duration:.4});
+ addEventListener('mousemove',e=>{dx(e.clientX);dy(e.clientY);ox(e.clientX);oy(e.clientY);
+  const b=e.target.closest('.magnetic');document.querySelectorAll('.magnetic').forEach(m=>{if(m!==b)gsap.to(m,{x:0,y:0,duration:.4})});
+  if(b){const r=b.getBoundingClientRect();gsap.to(b,{x:(e.clientX-r.left-r.width/2)*.25,y:(e.clientY-r.top-r.height/2)*.25,duration:.3})}});
+ addEventListener('mouseover',e=>{const c=e.target.closest('[data-cursor]'),t=e.target.closest('a,button'),big=c&&c.dataset.cursor.length>2;
+  l.textContent=c?c.dataset.cursor:'';gsap.to(o,{scale:big?3.2:c?1.8:t?1.6:1,duration:.3});o.classList.toggle('lbl',!!big)});
+}
+</script></body></html>
